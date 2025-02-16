@@ -11,7 +11,7 @@ const Business = () => {
   useEffect(() => {
     const fetchArticles = async () => {
       try {
-        const response = await API.get("articles/business");
+        const response = await API.get("articles/category/business");
         setArticles(response.data);
         console.log(response.data);
       } catch (err) {

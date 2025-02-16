@@ -11,7 +11,7 @@ const Sports = () => {
   useEffect(() => {
     const fetchArticles = async () => {
       try {
-        const response = await API.get("articles/sports");
+        const response = await API.get("articles/category/sports");
         setArticles(response.data);
         console.log(response.data);
       } catch (err) {

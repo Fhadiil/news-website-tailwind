@@ -11,7 +11,7 @@ const Entertainment = () => {
   useEffect(() => {
     const fetchArticles = async () => {
       try {
-        const response = await API.get("articles/entertainment");
+        const response = await API.get("articles/category/entertainment");
         setArticles(response.data);
         console.log(response.data);
       } catch (err) {

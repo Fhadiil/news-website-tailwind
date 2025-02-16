@@ -11,7 +11,7 @@ const Politics = () => {
   useEffect(() => {
     const fetchArticles = async () => {
       try {
-        const response = await API.get("articles/politics");
+        const response = await API.get("articles/category/politics");
         setArticles(response.data);
         console.log(response.data);
       } catch (err) {
